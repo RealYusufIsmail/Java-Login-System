@@ -33,13 +33,5 @@
 
 package net.yusuf;
 
-import javax.swing.*;
-
-public class LoginSystem {
-
-    JButton button = new JButton();
-
-    public static void main(String[] args) {
-
-    }
+public class Welcome {
 }
