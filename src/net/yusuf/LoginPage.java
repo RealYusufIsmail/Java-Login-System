@@ -51,7 +51,7 @@ public class LoginPage implements ActionListener {
     LoginPage(HashMap<String, String> loginInfoOriginal) {
         loginInfo = loginInfoOriginal;
     }
-
+    
     @Override
     public void actionPerformed(ActionEvent e) {
 
