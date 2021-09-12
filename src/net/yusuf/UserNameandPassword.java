@@ -35,11 +35,11 @@ package net.yusuf;
 
 import java.util.HashMap;
 
-public class IDandPassword {
+public class UserNameandPassword {
 
     HashMap<String, String> loginInfo = new HashMap<String, String>();
 
-    IDandPassword() {
+    UserNameandPassword() {
 
         loginInfo.put("yusuf", "123456789");
         loginInfo.put("Ahmad", "123456789");
