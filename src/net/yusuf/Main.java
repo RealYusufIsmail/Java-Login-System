@@ -33,13 +33,11 @@
 
 package net.yusuf;
 
-import javax.swing.*;
-
 public class Main {
 
     public static void main(String[] args) {
-        IDandPassword idandPassword = new IDandPassword();
+        UserNameandPassword usernameandPassword = new UserNameandPassword();
 
-        LoginPage loginPage = new LoginPage(idandPassword.getLoginInfo());
+        LoginPage loginPage = new LoginPage(usernameandPassword.getLoginInfo());
     }
 }
