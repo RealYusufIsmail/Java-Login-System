@@ -34,8 +34,7 @@
 package net.yusuf;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.util.HashMap;
 
 public class LoginPage implements ActionListener {
@@ -45,11 +44,24 @@ public class LoginPage implements ActionListener {
     JButton resetButton = new JButton("Reset");
     JTextField userNameField = new JTextField();
     JPasswordField userPasswordField = new JPasswordField();
-    JLabel userNameLabel = new JLabel("user name");
-    HashMap<String, String> loginInfo = new HashMap<String, String>();
+    JLabel userNameLabel = new JLabel("User name");
+    JLabel userPasswordLabel = new JLabel("Password");
+    JLabel errorMessageLabel = new JLabel();
+    HashMap<String, String> loginInfo;
 
     LoginPage(HashMap<String, String> loginInfoOriginal) {
         loginInfo = loginInfoOriginal;
+
+
+        userNameLabel.setBounds(50,100,75,25);
+        userPasswordLabel.setBounds(50,150,75,25);
+
+        frame.add(userNameLabel);
+        frame.add(userPasswordLabel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(420,420);
+        frame.setLayout(null);
+        frame.setVisible(true);
     }
     
     @Override
