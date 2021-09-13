@@ -34,6 +34,7 @@
 package net.yusuf;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 import java.util.HashMap;
 
@@ -46,7 +47,7 @@ public class LoginPage implements ActionListener {
     JPasswordField userPasswordField = new JPasswordField();
     JLabel userNameLabel = new JLabel("User name");
     JLabel userPasswordLabel = new JLabel("Password");
-    JLabel errorMessageLabel = new JLabel();
+    JLabel errorMessageLabel = new JLabel("Incorrect username or password.");
     HashMap<String, String> loginInfo;
 
     LoginPage(HashMap<String, String> loginInfoOriginal) {
@@ -55,6 +56,9 @@ public class LoginPage implements ActionListener {
 
         userNameLabel.setBounds(50,100,75,25);
         userPasswordLabel.setBounds(50,150,75,25);
+
+        errorMessageLabel.setBounds(125,250,250,35);
+        errorMessageLabel.setFont(new Font(null, Font.HANGING_BASELINE, 25));
 
         frame.add(userNameLabel);
         frame.add(userPasswordLabel);
