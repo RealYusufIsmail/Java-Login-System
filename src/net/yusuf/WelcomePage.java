@@ -33,5 +33,5 @@
 
 package net.yusuf;
 
-public class Welcome {
+public class WelcomePage {
 }
