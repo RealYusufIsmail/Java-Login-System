@@ -31,22 +31,13 @@
  *
  */
 
-package net.yusuf;
+package io.github.realyusufismail;
 
-import java.util.HashMap;
+public class Main {
 
-public class UserNameandPassword {
+    public static void main(String[] args) {
+        UserNameandPassword usernameandPassword = new UserNameandPassword();
 
-    HashMap<String, String> loginInfo = new HashMap<String, String>();
-
-    UserNameandPassword() {
-
-        loginInfo.put("yusuf", "123456789");
-        loginInfo.put("Ahmad", "123456789");
-        loginInfo.put("lfc", "ynwa");
-    }
-
-    protected HashMap getLoginInfo() {
-        return loginInfo;
+        LoginPage loginPage = new LoginPage(usernameandPassword.getLoginInfo());
     }
 }

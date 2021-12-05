@@ -31,7 +31,7 @@
  *
  */
 
-package net.yusuf;
+package io.github.realyusufismail;
 
 import javax.swing.*;
 import java.awt.*;

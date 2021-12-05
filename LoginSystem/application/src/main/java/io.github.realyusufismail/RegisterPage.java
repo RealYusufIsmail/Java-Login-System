@@ -31,26 +31,16 @@
  *
  */
 
-package net.yusuf;
+package io.github.realyusufismail;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class WelcomePage {
+public class RegisterPage implements ActionListener {
+    //TODO create this when finish making the login page. Version 2.0
 
-    JFrame frame = new JFrame();
-    JLabel welcomeLabel = new JLabel("Hi!");
+    @Override
+    public void actionPerformed(ActionEvent e) {
 
-    WelcomePage(String userName) {
-
-        welcomeLabel.setBounds(0,0,200,35);
-        welcomeLabel.setFont(new Font(null, Font.BOLD, 25));
-        welcomeLabel.setText("Hi " + userName);
-
-        frame.add(welcomeLabel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(420,420);
-        frame.setLayout(null);
-        frame.setVisible(true);
     }
 }

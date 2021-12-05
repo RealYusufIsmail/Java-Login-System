@@ -11,6 +11,7 @@ out
 *.ipr
 *.iws
 *.iml
+*.log
 .idea
 
 # gradle
@@ -20,7 +21,8 @@ build
 # other
 eclipse
 run
-
-# Files from Mac
 .DS_Store
-src/com/yusuf/calculator/Calculator.class
+.env
+database.db
+identifier.sqlite
+*.gz
